@@ -1,11 +1,10 @@
-
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
-import { ArrowLeft, Download, Print, Calendar, User, MapPin, Hash } from 'lucide-react';
+import { ArrowLeft, Download, Printer, Calendar, User, MapPin, Hash } from 'lucide-react';
 import { format } from 'date-fns';
 import { PatientData } from './PatientForm';
 
@@ -92,7 +91,7 @@ const PatientReport = () => {
           
           <div className="flex gap-2">
             <Button variant="outline" onClick={handlePrint} className="flex items-center gap-2">
-              <Print size={16} />
+              <Printer size={16} />
               Print
             </Button>
             <Button variant="outline" onClick={handleDownload} className="flex items-center gap-2">
